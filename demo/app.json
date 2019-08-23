@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/home/home",
+		"pages/explosively/explosively",
+		"pages/clearance/clearance",
+		"pages/freeshipping/freeshipping",
+		"pages/login/login",
+		"pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#E8161B",
+    "navigationBarBackgroundColor": "#E8161B",
+    "navigationBarTitleText": "啥嘎鸡",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#333333",
+    "backgroundColor": "#F8F8F8",
+    "selectedColor": "#f94048",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/images/icon_tabbar_1.2.png",
+        "selectedIconPath": "/images/icon_tabbar_1.1.png"
+      },
+			{
+			  "pagePath": "pages/explosively/explosively",
+			  "text": "爆款",
+			  "iconPath": "/images/icon_tabbar_2.2.png",
+			  "selectedIconPath": "/images/icon_tabbar_2.1.png"
+			},
+			{
+			  "pagePath": "pages/clearance/clearance",
+			  "text": "品牌清仓",
+			  "iconPath": "/images/icon_tabbar_3.2.png",
+			  "selectedIconPath": "/images/icon_tabbar_3.1.png"
+			},
+			{
+			  "pagePath": "pages/freeshipping/freeshipping",
+			  "text": "1.9包邮",
+			  "iconPath": "/images/icon_tabbar_4.2.png",
+			  "selectedIconPath": "/images/icon_tabbar_4.1.png"
+			}
+    ]
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wx32540bd863b27570"
+  ],
+  "sitemapLocation": "sitemap.json"
+}

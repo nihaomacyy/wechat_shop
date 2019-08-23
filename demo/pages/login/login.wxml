@@ -1,0 +1,17 @@
+<view >
+	<view wx:if="{{canIUse}}">
+		<view class='header'>
+			<image src='/images/logo.png'></image>
+		</view>
+		<view class='content'>
+			<view class="content-title1">啥嘎鸡</view>
+			<view class="content-title2">阿里巴巴战略合作伙伴</view>
+		</view>
+		<view class="footer">
+			<button class='bottom' type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">
+				微信一键登录
+			</button>
+		</view>
+	</view>
+	<view wx:else>请升级微信版本</view>
+</view>

@@ -1,0 +1,137 @@
+<view class='bgView'>
+	<view class='search-container1'>
+		<view class="search-content" bindtap="onBindFocus">
+			<view class="search-content-img-area"><image src="/images/icon_searchbar_search.png" class="search-content-img"></image></view>
+			<view class="search-content-title"><text>搜优惠券  再购买  省更多</text></view>
+		</view>
+	</view>
+	<view class='nav-container'>
+		<view class='nav-scoller-container'>
+			<scroll-view scroll-x class='swiper-nav' scroll-left='{{swiperNav.x}}' scroll-with-animation='true' bindtap='swiperNav'>
+				　<text wx:for='{{swiperNav.arr}}' wx:key='{{index}}' class='item-nav {{swiperNav.i==index ? "active" : ""}}' data-i='{{index}}' data-catid='{{item.cate}}'>{{item.name}}</text>
+			</scroll-view>
+		</view>
+		<view class="nav-scoller-view-more-area">
+			<view class='nav-scoller-view-more' bindtap='showCatModel'>
+				<l-popup show="{{modelShow}}" bind:lintap="bindModelHide" locked="{{modelLocked}}" content-align="top" > 
+					<view class='cat-model-container'>
+						<view class="cat-model-content-top"><text class="cat-top-title">全部分类</text><text style="font-size:40rpx" bindtap="bindModelHide">x</text></view>
+						<view class="cat-model-content-bottom">
+							<block wx:for='{{swiperNav.arr}}' wx:key="{{index}}">
+								<l-tag bindtap="clickCurrentTag" l-class="l-cat-content-bottom-area" l-select-class='{{swiperNav.i==index ? "l-cat-content-bottom-area-active" : ""}}' select="{{swiperNav.i==index ? true : false}}" data-i='{{index}}' bg-color="#EEEEEE" font-color="#333333" plain="{{true}}" >{{item.name}}</l-tag>
+							</block>
+						</view>
+					</view>
+				</l-popup>
+			</view>
+		</view>
+	</view>
+	<view wx:if="{{swiperNav.i == 0}}">
+		<view class="banner-container">
+			<view class="cancle-container">
+				<view class="swp-container">
+					<swiper catchtap="onSwiperTap" indicator-color="rgba(255, 255, 255, 0.5)" indicator-active-color="#ffffff" style="height: 328rpx;" circular="true" vertical="{{false}}" indicator-dots="true" autoplay="true" interval="5000">
+						<block wx:for="{{themeList}}" wx:key="idx">
+							<swiper-item class="swp-itme"> 
+								<image class="swp-img" data-themeid="{{item.id}}" src="{{item.image_url}}"></image>
+							</swiper-item>
+						</block>
+					</swiper>
+				</view>
+			</view>
+		</view>
+		<view class="report-container">
+			<view class="report-container2">
+				<view class="report-content1"><text>快报</text></view>
+				<view class="report-content2"></view>
+			</view>
+			<swiper style="height: 64rpx;width: 500rpx;" vertical="{{true}}" circular="true" indicator-dots="{{false}}" autoplay="true" interval="5000">
+				<block wx:for="{{reportList}}" wx:key="id">
+					<swiper-item>
+						<view class="report-container1">
+							<view class="report-content3"><image class="report-content3-img" src="{{item.avatar}}"></image></view>
+							<view class="report-content4"><text>{{item.nickName}}</text></view>
+							<view class="report-content5"><text>成功出单</text></view>
+							<view class="report-content6"><text>赚 {{item.ntdcmoney}}元</text></view>
+						</view>
+					</swiper-item>
+				</block>
+			</swiper>
+		</view>
+		<view class="hot-container">
+			<view class="hot-area"><image class="hot-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAA4JJREFUWAm9V01IVFEU/u6bGRNNhVqkVlPhUgqCoLBaFBFY2DJqIW1s0dZVy9kUQeAuCpTApCxaFEY/SGgIlUGEGpVYpo4/0BhEKGU2793Od59Dz5n3RsefOTDz7rv3nvN995xzz31XIU30+XPVUGiAdo7LUBQaG9Om5PaqMCsKcSirU2y1qObWD14DKvWiY7ECTA03QasL0NpK9a/pUykHSl9HZVWjisXmadsQMOCTw0+F4dE1BQwyptCFrVW1JOGu1Kw8T+AkxYUSU0SZmEMPrJvbieInDAfUHstNuHWKuR9wqo95JskeXsj2VPfKnlq7enwyq/iqpGEyzPz525WdFpaRqP/oMnsFVDs2dNKRKMrPoWeV7DoLVigEFWKakYwvkah4YIl9Xl4JHDwMbCkHSkuBmRngyxDw+iXw8wecpA27pATWiTqovftgbdoM/X0aemwE9qOHUBPjsCJhoSBE0kkIttIN9Qv+81lxzSHgyLFMRU79Mw+nvQ22rDDceBGqqCjDAL1h322DevYEoUgEEK+kC0PgL9u2B4NTo6AA6vRZhKM7fME5hWEInamHPfgJepzFkGFYHIpMStSk7K/xX7k76v4XFkIVZ6/UJKFq6+DYtpucXn1pBxNgzNdI1M5dbnKmdovHbjCB4mLPtNU1VVmZa2Cx901fMIHpxOpQPdpOfEw2QGb8OSWYwNSkx8Tqmnr4s0lIPyvBBN699Zufc59moep+LgRCvrrBBKSY4E2vr1IunfbjDliJhFRECUF6IRJDwQSI0tUJSCVbqdiDH4H77bDCLDc+GSi92Qlw7967AyS+5czBGf0Kp+kKQqwDrIA+q6fR7AQ44/cv4NZNYHSEb8sSe6AP9qUYQn+T4nqJfQA4jS1NgLPm5oDbrUBPN+AEHx1aPJYUj+mrlxFOJs1pmA2cpoPPAo56hVWs5wUwJCfhyVNAeYV3FI5sNbv5BqypCTn9Ilnd7lXMfhp6Z3rbdGn1bugDNdAVlXA6HgC9r0yy8RvArDqL272meFDPLvlN4NVgm9543w/090lIbBNHVbBBVi3ElglsTAo2cyBuXnL9EyACcosZl/PLJxdwFy/OPSKbfYVCwNxB/4MJtiXubxEj8iGXZyGmYFvmrsbrUr5FMInt1gG5q0kyduWNA7GIKWIImIui3NXk7dq6hoNuJ8bCvZAEJIsWS76v5/8AapAWH9icpskAAAAASUVORK5CYII="></image></view>
+			<view class="hot-title"><text>精选推荐</text></view>
+		</view>
+	</view>
+	<view wx:else>
+		
+	</view>
+	<view wx:if="{{swiperNav.i != 0}}">
+		<view class='sort-container'>
+			<block wx:for="{{sortList.sort}}" wx:for-item="val" wx:key="{{index}}">
+				<view catchtap="onChangeSort" class='sort-title {{sortList.i==index? "sort-active" : ""}}' >
+					<text  data-key="{{val.key}}">{{val.title}}</text>
+					<view wx:if="{{val.isShowImg && val.flag == 1}}">
+						<image class='sort-yongjin-img' src='/images/icon_navbar_paixu_up.png'></image>
+					</view>
+					<view wx:elif="{{val.isShowImg && val.flag == 2}}">
+						<image class='sort-yongjin-img' src='/images/icon_navbar_paixu_down.png'></image>
+					</view>
+					<view wx:elif="{{val.isShowImg && val.flag == 3}}">
+						<image class='sort-yongjin-img' src='/images/icon_navbar_paixu_normal.png'></image>
+					</view>
+					<view wx:else>
+					</view>
+				</view>
+			</block>
+		</view>
+	</view>
+	<view wx:else>
+		
+	</view>
+	
+	<view class='goods-container' >
+		<block wx:for="{{goodsList}}" wx:for-item="goods" wx:key="id">
+		  <view class='goods-content' data-goodsId='{{goods.id}}' bindtap='getDetail'>
+		  	<view>
+		  		<image class='goods-content-img' src='{{goods.imageUrl}}'></image>
+		  	</view>
+		  	<view class='goods-content-title-area'>
+		  		<text class='goods-content-title'>{{goods.title}}</text>
+		  	</view>
+		  	<view class='goods-content-get-area'>
+				<view wx:if="{{goods.length == 1}}">
+					<view class="goods-content-quan">
+						<text class="goods-content-quan-title">{{goods.coupon_discount}}元券</text>
+					</view>
+				</view>
+				<view wx:elif="{{goods.length == 2}}">
+					<view class="goods-content-quan1">
+						<text class="goods-content-quan-title">{{goods.coupon_discount}}元券</text>
+					</view>
+				</view>
+				<view wx:elif="{{goods.length == -1}}">
+					
+				</view>
+				<view wx:else>
+					<view class="goods-content-quan2">
+						<text class="goods-content-quan-title">{{goods.coupon_discount}}元券</text>
+					</view>
+				</view>
+				<view>
+					<text class='goods-content-get-price'>券后￥</text>
+					<text class='goods-content-get-price1'>{{goods.sales_price}}</text>
+				</view>
+		  	</view>
+		  	<view class='goods-content-tg-price-area'>
+		  		<text class='goods-content-tg3-price'>销量 {{goods.sales_tip}}</text>
+				<text class='goods-content-tg2-price'>￥{{goods.min_normal_price}}</text>
+		  	</view>
+		  	<view class='goods-tg-get-price'>
+		  		<text >推广赚 ￥{{goods.promotion_rate}}</text>
+		  	</view>
+		  </view>
+		</block>
+	</view>
+	<view style="text-align: center;font-size: 32rpx;color: #969696;"><text>加载中......</text></view>
+</view>

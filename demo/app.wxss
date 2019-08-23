@@ -1,0 +1,5 @@
+/**公共样式**/
+.bgView {
+  width: 100%;
+  overflow: hidden;
+}

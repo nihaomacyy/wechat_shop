@@ -1,0 +1,161 @@
+<view class='bgView'>
+
+  <view class='goods-img-container'>
+    <image class='goods-img' src='{{coverImg}}'></image>
+  </view>
+
+  
+  
+  <view wx:if="{{coupondiscount}}">
+	  <view class='goods-content'>
+	  		<view class='goods-title3-area'>
+	  			<view>
+	  				<text class='goods-title5'>券后 ¥</text>
+	  				<text class='goods-title6'>{{detailData.sales_price}}</text>
+	  			</view>
+	  			<view style="display:flex;flex-direction:row;">
+	  				<view class='goods-title8'></view> 
+	  				<text class='goods-title7'>推广赚 ¥{{detailData.promoting_earning_differential_price}}</text>
+	  			</view>
+	  		</view>
+	  		
+	  		<view class="goods-title2-area">
+	  			<view style="display:flex;flex-direction:row;align-items:center;">
+	  				<text class="goods-title10">拼多多价 </text>
+	  				<text class='goods-title1'>￥{{detailData.min_group_price}}</text>
+	  			</view>
+	  		  <view style="display:flex;flex-direction:row;align-items:center;">
+	  				<text class='goods-title3'>销量{{detailData.sales_tip}}</text>
+	  			</view>
+	  		</view>
+	  		
+	    <view class='goods-title-area'>
+	      <image style="width: 28rpx;height: 28rpx;mode:widthFix;margin-right:10rpx;" src="https://img.funshipin.com/wechat/qiaomaimai/icon_pin.png"></image>
+		  <text class='goods-title'>{{goodsName}}</text>
+	    </view>
+	    
+	  		<view class="goods-title4-area" bindtap="bingToMiniProgram">
+	  			<view class="goods-title4-content1">
+	  				<view class="goods-title4-title1">
+	  					<text class="goods-title4-text1">{{detailData.coupon_discount}}</text>
+	  					<text class="goods-title4-text2">元优惠券</text>
+	  				</view>
+	  				<view class="goods-title4-title2">
+	  						<text class="goods-title4-text3">有效期{{detailData.coupon_start_time}} ～ {{detailData.coupon_end_time}}</text>
+	  						<text class="goods-title4-text3">剩余 {{detailData.coupon_remain_quantity}}</text>
+	  				</view>
+	  			</view>
+	  		</view>
+	  		<view class="goods-title6-area"><text>极速退款 · 全场包邮 · 极速发货</text></view>
+	  </view>
+  </view>
+  <view wx:else>
+	  <view class='goods-content' style="height: 280rpx;">
+	  		<view class='goods-title3-area'>
+	  			<view>
+	  				<text class='goods-title5'>券后 ¥</text>
+	  				<text class='goods-title6'>{{detailData.sales_price}}</text>
+	  			</view>
+	  			<view style="display:flex;flex-direction:row;">
+	  				<view class='goods-title8'></view> 
+	  				<text class='goods-title7'>推广赚 ¥{{detailData.promoting_earning_differential_price}}</text>
+	  			</view>
+	  		</view>
+	  		
+	  		<view class="goods-title2-area">
+	  			<view style="display:flex;flex-direction:row;align-items:center;">
+	  				<text class="goods-title10">拼多多价 </text>
+	  				<text class='goods-title1'>￥{{detailData.min_group_price}}</text>
+	  			</view>
+	  		  <view style="display:flex;flex-direction:row;align-items:center;">
+	  				<text class='goods-title3'>销量{{detailData.sales_tip}}</text>
+	  			</view>
+	  		</view>
+	  		
+	    <view class='goods-title-area'>
+	      <image style="width: 28rpx;height: 28rpx;mode:widthFix;margin-right:10rpx;" src="https://img.funshipin.com/wechat/qiaomaimai/icon_pin.png"></image>
+		  <text class='goods-title'>{{goodsName}}</text>
+	    </view>
+	  		<view class="goods-title6-area"><text>极速退款 · 全场包邮 · 极速发货</text></view>
+	  </view>
+  </view>
+  
+  <!-- 文案start -->
+	<view wx:if="{{isHide}}">
+		<view class='wenan-container'>
+		  <view class='wenan-top'>
+		    <view class='wenan-top-title-area1'><text class='wenan-top-title1'>商品文案</text></view>
+		    <view bindtap='bindCopyWord' data-text="{{detailData.goods_name}}" class='wenan-top-title-area2'><text class='wenan-top-title2'>复制文字</text></view>
+		    <!-- <view bindtap='bindPreviewImage'  data-img="{{detailData.goods_thumbnail_url}}" class='wenan-top-title-area3'><text class='wenan-top-title3'>分享图片</text></view> -->
+			<view bindtap='showPosterModels' data-remainquan="{{detailData.coupon_remain_quantity}}" data-starttime="{{detailData.coupon_start_time}}" data-endtime="{{detailData.coupon_end_time}}" data-coupondiscount="{{detailData.coupon_discount}}" data-salestip="{{detailData.sales_tip}}" data-poster="{{detailData.goods_thumbnail_url}}" data-title="{{detailData.goods_name}}" data-price="{{detailData.min_group_price}}" data-sprice="{{detailData.sales_price}}" class='wenan-top-title-area3'><text class='wenan-top-title3'>生成海报</text></view>
+		  </view>
+		  <view style="width: 100%;height: 1px;border-bottom: 1px solid #DEDEDE;opacity: 0.5;"></view>
+		  <view class='wenan-footer'>
+		    <view>
+					<text class='wenan-footer1'>{{detailData.goods_name}}</text>
+				</view><!-- 
+		    <view><text class='wenan-footer2'></text></view>
+		    <view><text class='wenan-footer3'>——————</text></view> -->
+		    <view><text class='wenan-footer4'>商城价：¥{{detailData.min_group_price}}</text></view>
+		    <view><text class='wenan-footer5'>券后价：¥{{detailData.sales_price}}</text></view>
+				<view style="margin-bottom: 24rpx;">
+					<text class="wenan-footer5">推广链接：</text>
+					<text bindtap="bindCopyLink" data-link="{{tgLink}}" class='wenan-footer5'>{{tgLink}}</text>
+				</view>
+		  </view>
+		</view>
+	</view>
+	<view wx:else>
+		<view class='wenan-container'>
+		  <view class='wenan-top'>
+		    <view class='wenan-top-title-area1'><text class='wenan-top-title1'>推荐理由</text></view>
+		  </view>
+		  <view class='wenan-footer'>
+		    <view>
+					<text class='wenan-footer1'>{{detailData.goods_name}}</text>
+				</view>
+		  </view>
+		</view>
+	</view>
+  <!-- 文案 end-->
+	
+  <!-- 商品详情 start -->
+  <view class='goods-detail-container'>
+		<view class="goods-detail-title-area">
+			<text class="goods-detail-title">-  商品详情  -</text>
+		</view>
+		<block wx:for="{{detailData.goods_gallery_urls}}" wx:key="{{index}}">
+			<view class="goods-detail-area">
+				<image mode='widthFix' style="width:750rpx" class="goods-detail-img" src="{{item}}"></image>
+			</view>
+		</block>
+  </view>
+  <!-- 商品详情 end-->
+  <!-- 返回首页 start-->
+  <!-- <view class="home" bindtap="bingHome">
+  </view> -->
+  <!-- 返回首页 end-->
+  <view class='footer-container' style="padding-bottom:{{btuBottom}}">
+		<view bindtap="bingHome" class='footer-content-area3'>
+			<view class="footer-content-area3-img-area "><image class="footer-content-area3-img" src="/images/icon_tabbar_1.2.png"></image></view>
+			<view class="footer-content-area3-title"><text>首页</text></view>
+		</view>
+    <view bindtap="bingToMiniProgram" class='footer-content-area1'><text>领券购买</text></view>
+    <view class='footer-content-area2'><button style="border:0;color:#ffffff;height:72rpx;line-height:72rpx;font-size: 40rpx;" plain="true" open-type="share">分享好友</button></view>
+  </view>
+	<view class="poster">
+		<l-popup show="{{modelShow}}" bind:lintap="bindPopup" content-align="center" > 
+			<view class="poster-container">
+				<image mode="widthFix" style="width:440rpx;" src="{{tempFilePath}}"></image>
+				<view bindtap="bingSaveTempImg"class="poster-container-save" ><text class="poster-container-save-title">保存海报至相册</text></view>
+				<view bindtap="bingShareTempImg" class="poster-container-share" ><text class="poster-container-share-title">点击海报长按分享</text></view>
+			</view>
+		</l-popup>
+	</view>
+	<view wx:if="{{casShow}}" class="poster-canvas">
+		<canvas canvas-id="shareCanvas" style="width:{{canvasWidth}};height:{{canvasHeight}};"></canvas>
+	</view>
+	<view wx:else>
+		
+	</view>
+</view>

@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "首页",
+  "enablePullDownRefresh": true,
+  "navigationBarBackgroundColor":"#E8161B",
+  "usingComponents": {
+    "l-search-bar": "/dist/search-bar/index",
+    "l-segment": "/dist/segment/index",
+    "l-segment-item": "/dist/segment-item/index",
+  	"l-popup":"/dist/popup/index",
+  	"l-tag":"/dist/tag/index"
+  }
+}

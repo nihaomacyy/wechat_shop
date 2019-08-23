@@ -1,0 +1,21 @@
+<view class='title {{fontSet?"fontSet":""}}'  bindtap='togglePicker'>
+  {{province}}-{{city}}-{{county}}
+</view>
+<view class='mask' wx:if="{{isShow}}" bindtap='closeModal'></view>
+<view class='city-body {{isShow ? "active" : ""}}'>
+  <view class='cancel-click'>
+    <text bindtap='cancel'>取消</text>
+    <text bindtap='done'>确定</text>
+  </view> 
+  <picker-view indicator-style="height: 50px;color:#333333;" style="width: 100%; height: 300px;" value="{{value}}" bindchange="bindChange">
+    <picker-view-column style="border-right: 1px solid rgb(242,242,242)">
+      <view wx:for="{{provinces}}" wx:key="item.name" style="text-align: center; color:#333333;line-height: 50px">{{item.name}}</view>
+    </picker-view-column>
+    <picker-view-column style="border-right: 1px solid rgb(242,242,242)">
+      <view wx:for="{{citys}}" wx:key="item.name" style="text-align: center;color:#333333;line-height: 50px">{{item.name}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{countys}}" wx:key="item.name" style="text-align: center;color:#333333;line-height: 50px">{{item.name}}</view>
+    </picker-view-column> 
+  </picker-view>
+</view>

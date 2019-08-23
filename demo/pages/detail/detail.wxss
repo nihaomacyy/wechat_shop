@@ -1,0 +1,396 @@
+/* 商品大图样式 */
+.bgView{
+  width: 100%;
+  overflow: hidden;
+  background: #F5F5F5;
+}
+.goods-img-container{
+  width: 750rpx;
+  height: 750rpx;
+  background: #dfdfdf;
+}
+.goods-img{
+  width: 100%;
+  height:100%;
+}
+
+/* 标题区域样式 */
+.goods-content{
+  height: 500rpx; 
+  background: #FFFFFF;
+  padding: 0rpx 24rpx;
+}
+.goods-title-area{
+	width: 100%;
+	line-height: 45rpx;
+	color:#333333;
+	font-size:32rpx;
+	font-weight:bold;
+	margin-top:24rpx;
+}
+.goods-title{
+
+}
+.goods-title1{
+  color: #969696;
+  font-size: 24rpx;
+  text-decoration:line-through;
+}
+
+.goods-title2-area{
+	width:100%;
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	justify-content:space-between;
+	margin-top: 8rpx;
+}
+.goods-title2{
+	width:100rpx;
+	height:40rpx;
+	line-height:40rpx;
+  color:  #ffffff;
+  /* font-size: 20rpx; */
+  margin-left:8rpx;
+	/* padding: 10rpx 15rpx; */
+  background: url('https://img.funshipin.com/wechat/qiaomaimai/icon_quan.png');
+  background-size:100%;
+  background-repeat:no-repeat;
+	
+}
+.goods-title3{
+  font-size: 24rpx;
+  color: #969696;
+}
+.goods-title4{
+  font-size: 24rpx;
+  color: #808080;
+  margin-left: 50rpx;
+}
+.goods-title3-area{
+  display:flex;
+  flex-direction:row;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+.goods-title4-area{
+	height: 176rpx;
+	display: flex;
+	flex-flow: row;
+	margin-top: 24rpx;
+	background: url('https://img.funshipin.com/wechat/qiaomaimai/share_1.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.goods-title4-content1{
+	display: flex;
+	flex-direction: column;
+	width: 480rpx;
+	height: 176rpx;
+	align-items: center;
+	justify-content:center;
+}
+.goods-title4-title1{
+	display: flex;
+	flex-direction: row;
+	align-items:flex-end;
+}
+.goods-title4-title2{
+	display: flex;
+	flex-direction: row;
+	width:412rpx;
+	justify-content:space-between;
+	margin-top: 24rpx;
+}
+.goods-title4-text1{
+	color: #FFFFFF;
+	font-size: 64rpx;
+	font-weight: bold;
+	line-height: 64rpx;
+}
+.goods-title4-text2{
+	color: #FFFFFF;
+	font-size: 40rpx;
+	font-weight: bold;
+}
+.goods-title4-text3{
+	color: #FFFFFF;
+	font-size: 24rpx;
+}
+.goods-title4-content2{
+	width: 216rpx;
+	height: 176rpx;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+}
+.goods-title4-title2-circle{
+	width:132rpx;
+	height:132rpx;
+	border-radius:68rpx;
+	background: -webkit-linear-gradient(left, #F8CE02 , #FAB21F); /* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(right, #F8CE02,#FAB21F); /* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(right, #F8CE02, #FAB21F); /* Firefox 3.6 - 15 */
+	background: linear-gradient(to right, #F8CE02 , #FAB21F); /* 标准的语法 */
+	box-shadow:0rpx 0rpx 8rpx 8rpx #BA0B0B;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	color:#ffffff;
+	font-size: 40rpx;
+	font-weight: bold;
+}
+
+.goods-title5{
+  color: #F44336;
+  font-size: 28rpx;
+	font-weight: bold;
+}
+.goods-title6{
+  color: #F44336;
+  font-size: 48rpx;
+	font-weight: bold;
+}
+.goods-title7{
+  color: #F44336;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.goods-title8{
+  width: 48rpx;
+  height: 48rpx;
+  background: url('https://img.funshipin.com/wechat/qiaomaimai/icon_xq_hb.png');
+  background-size:80%;
+  background-repeat:no-repeat;
+}
+.goods-title10{
+	font-size: 24rpx;
+	color:#969696;
+}
+.goods-title5-area{
+	height: 24rpx;
+	border-bottom: 1px solid #DEDEDE;
+}
+.goods-title6-area{
+	color: #969696;
+	font-size: 24rpx;
+	margin-top: 20rpx;
+	text-align: center;
+}
+/* 文案区域 */
+.wenan-container{
+  background: #ffffff;
+  margin-top: 24rpx;
+  padding: 0rpx 24rpx;
+}
+.wenan-top{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height:88rpx;
+}
+.wenan-top-title1{
+  color: #333333;
+  font-size: 28rpx;
+}
+.wenan-top-title-area2{
+  width: 154rpx;
+  height: 48rpx;
+  background: #F44336;
+  border-radius: 24rpx;
+  text-align:center;
+  line-height:48rpx;
+  margin-left: 260rpx;
+}
+.wenan-top-title-area3{
+  width: 154rpx;
+  height: 48rpx;
+  border: 1px solid #F44336;
+  border-radius: 24rpx;
+  text-align:center;
+  line-height:48rpx;
+  margin-left: 16rpx;
+}
+.wenan-top-title2{
+  color: #ffffff;
+  font-size: 28rpx;
+}
+.wenan-top-title3{
+  color: #F44336;
+  font-size: 28rpx;
+}
+.wenan-footer{
+  display: flex;
+  flex-direction: column;
+  margin-top: 12rpx;
+}
+.wenan-footer1{
+	line-height: 50rpx;
+  color: #333333;
+  font-size:28rpx; 
+}
+.wenan-footer2{
+  color: #333333;
+  font-size:28rpx; 
+}
+.wenan-footer4{
+  color: #333333;
+  font-size:28rpx; 
+}
+.wenan-footer5{
+  color: #333333;
+  font-size:28rpx; 
+}
+/* 底部浮动样式*/
+.footer-container{
+  width: 100%;
+  height: 98rpx;
+  background: #FFFFFF;
+  position:fixed;
+  bottom: 1rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-top:1px solid #F2F2F2;
+}
+.footer-content-area1{
+  height: 72rpx;
+  width: 288rpx;
+  text-align:center;
+  line-height:72rpx;
+  color:#ffffff;
+  font-size: 40rpx;
+  background: -webkit-linear-gradient(left, #FDC031 , #FA8C16); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #FDC031, #FA8C16); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #FDC031, #FA8C16); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #FDC031 , #FA8C16); /* 标准的语法 */
+  border-radius:40rpx;
+}
+.footer-content-area2{
+  height: 72rpx;
+  width: 288rpx;
+  text-align:center;
+  line-height:72rpx;
+  color:#ffffff;
+  background: -webkit-linear-gradient(left, #FE6753 , #F44336); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #FE6753, #F44336); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #FE6753, #F44336); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #FE6753 , #F44336); /* 标准的语法 */
+  border-radius:40rpx;
+  margin-left: 16rpx;
+}
+.footer-content-area3{
+	height: 98rpx;
+	width: 110rpx;
+	background: #FFFFFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.footer-content-area3-img-area{
+	width:36rpx;
+	height:36rpx;
+	margin-top:10rpx;
+	margin-bottom:10rpx;
+}
+.footer-content-area3-img{
+	width:36rpx;
+  height:36rpx;
+	mode:widthFix;
+}
+.footer-content-area3-title{
+	color: #333333;
+	font-size: 24rpx;
+}
+
+/** 商品详情样式*/
+.goods-detail-container{
+  margin-top:24rpx;
+	margin-bottom:98rpx;
+}
+.goods-detail-title-area{
+	width:100%;
+	height:88rpx;
+	background:#ffffff;
+	text-align:center;
+	line-height:88rpx;
+}
+.goods-detail-title{
+	color:#333333;
+	font-size:28rpx;
+}
+.goods-detail-area{
+	background: #FFFFFF;
+	text-align: center;
+}
+.goods-detail-img{
+	/* width: 100%; */
+}
+.goods-quan{
+	font-size: 24rpx;
+	color: #FFFFFF; 
+	width:120rpx;
+	height:40rpx;
+	line-height:40rpx;
+	text-align:center;
+	margin-left:20rpx;
+	background: url('https://img.funshipin.com/wechat/qiaomaimai/icon_quan.png') no-repeat;background-size:100%;
+}
+
+/**
+ * 海报样式
+ */
+.poster-container{
+	width:440rpx;
+	height:1100rpx;
+}
+.poster-container-save{
+	width: 440rpx;
+	height: 88rpx;
+	background: #FF6F00;
+	line-height: 88rpx;
+	margin-top:24rpx;
+	text-align: center;
+}
+.poster-container-share{
+	width: 440rpx;
+	height: 88rpx;
+	background: #F44236;
+	line-height: 88rpx;
+	margin-top:24rpx;
+	text-align: center;
+}
+.poster-container-save-title{
+	color: #FFFFFF;
+	font-size: 36rpx;
+}
+.poster-container-share-title{
+	color: #FFFFFF;
+	font-size: 40rpx;
+}
+.poster-container-img{
+	width: 440rpx;
+	height: 780rpx;
+	/* background: #FFFFFF; */
+	text-align: center;
+}
+.poster-canvas{
+	position:none;
+	height:0px;
+	width:0px;
+}
+.home{
+	position:fixed;
+	bottom:60px;
+	left:12px;
+	width:70rpx;
+	height:70rpx;
+	text-align:center;
+	background: url('https://img.funshipin.com/wechat/qiaomaimai/icon_tab_1_pressed.png');
+	background-repeat:no-repeat;
+	background-size:100%;
+	border:1px solid #ff4336;
+	border-radius:35rpx;
+}
