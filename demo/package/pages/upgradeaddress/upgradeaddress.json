@@ -1,0 +1,11 @@
+{
+	"navigationBarTitleText":"新建地址",
+	"navigationBarBackgroundColor":"#FFFFFF",
+	"navigationBarTextStyle":"black",
+	"usingComponents": {
+		"l-input": "/dist/input/index",
+		"l-textarea": "/dist/textarea/index",
+		"l-popup":"/dist/popup/index",
+		"city-picker": "/dist/city-picker/city-picker"
+	}
+}

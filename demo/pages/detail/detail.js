@@ -81,6 +81,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+	// 适配iphone X
 	let that = this;
 	wx.getSystemInfo({
 		success: res=>{
@@ -175,6 +176,8 @@ Page({
    * 分享图片
    * */
   bindPreviewImage:function(e){
+	    //获取你存放在服务器上的图片地址，效果就是放大到手机屏幕全屏
+		//好像临时路径也可以，比如你用canvas画好的图片，也可以放大至手机全屏预览
 		let currentImg = e.currentTarget.dataset.img
 		wx.previewImage({
 		  current: currentImg, // 当前显示图片的http链接
@@ -250,6 +253,10 @@ Page({
 	   	params: {},
 	   	method: "get",
 	   }).then((res) => {
+		   // 这里是请求你服务器接口，然后通过接口拿到，你要跳转到小程序页面路径
+		   // 这种是分包路径 ("package_a/welfare_coupon/welfare_coupon?goods_id=27815116677")
+		   // 正常路径是这样的 ("pages/test/test")
+		   // appid 一定要在你小程序后台设置一下，不然跳不了（自行百度）
 		   wx.navigateToMiniProgram({
 			  appId: res.data.we_app_info.app_id,
 			  path: res.data.we_app_info.page_path,
@@ -261,9 +268,12 @@ Page({
 	   });
    },
    /**
+	* 这个是画布上面用来给文本换行用的
+	* 具体自己慢慢看
 	* 文本换行
 	* */
-   textByteLength(text, num) { // text为传入的文本  num为单行显示的字节长度
+   textByteLength(text, num) {
+	   // text为传入的文本  num为单行显示的字节长度
       let strLength = 0; // text byte length
       let rows = 1;
       let str = 0;
@@ -383,6 +393,19 @@ Page({
     })
     return Promise.all(all)
   },
+  /** 
+   * 这里canvas是生成海报的,按照下面方法，只要更换图片就能生成预览图了
+   * 所有的https://图片地址，必须要在你小程序后台download下面设置好
+   * 不然发布体验版测试的时候，各种坑
+   * 开发的时候没事
+   * 
+   * 画好海报之后，直接把临时路径保存到page data里面的变量里面，
+   * 这样你就可以在任意的地方去预览你的海报了
+   * 
+   * 输出的时候，不要给宽高，直接拿canvasId: 'shareCanvas',
+   * 什么事情都没有，不然各种屏幕适配会出问题
+   * 
+   * **/
 	showPosterModels:function(e){
 		var that = this
 		// 画背景图片
@@ -398,9 +421,9 @@ Page({
 		let salestip = e.currentTarget.dataset.salestip//销量
 		let currentAvator = that.data.userInfo.avatar//头像
 		//let qrcode = that.data.qrcodes
-		let quan = "https://img.funshipin.com/wechat/qiaomaimai/icon_quan.png"//本地图片不可以，要远程地址
-		let pinLogo = "https://img.funshipin.com/wechat/qiaomaimai/icon_pin.png"
-		let share = "https://img.funshipin.com/wechat/qiaomaimai/share.png"
+		let quan = "120x40"//本地图片不可以，要远程地址,尺寸已标注
+		let pinLogo = "32x32"
+		let share = "700x176"
 		this.generateQrcode().then(function(res){
 			wx.showLoading({
 				title: '合成中,请稍后...',

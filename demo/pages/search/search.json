@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "啥嘎鸡", 
+  "usingComponents": {
+    "l-search-bar": "/dist/search-bar/index",
+    "l-segment":"/dist/segment/index",
+    "l-segment-item": "/dist/segment-item/index"
+  }
+}

@@ -1,0 +1,45 @@
+<template name="bannerListItem">
+	<view class='goods-container'>
+		<view class='goods-content-img-area'>
+			<image class='goods-content-img' src='{{imageUrl}}'></image>
+		</view>
+		<view class='goods-content-word-area'>
+			<view class='goods-content-title-area'>
+				<text>{{title}}</text>
+			</view>
+			<view class='goods-content-get-area'>
+				<view>
+					<text class='goods-content-get-price'>券后￥</text>
+					<text class='goods-content-get-price1'>{{sales_price}}</text>
+					<text style="text-decoration:line-through;font-size: 24rpx;color: #969696;margin-left: 12rpx;">￥{{min_normal_price}}</text>
+				</view>
+				<view wx:if="{{length == 1}}">
+					<view class="goods-content-quan">
+						<text class="goods-content-quan-title">￥{{coupon_discount}}</text>
+					</view>
+				</view>
+				<view wx:elif="{{length == 2}}">
+					<view class="goods-content-quan1">
+						<text class="goods-content-quan-title">￥{{coupon_discount}}</text>
+					</view>
+				</view>
+				<view wx:elif="{{length == -1}}">
+					
+				</view>
+				<view wx:else>
+					<view class="goods-content-quan2">
+						<text class="goods-content-quan-title">￥{{coupon_discount}}</text>
+					</view>
+				</view>
+			</view>
+			<view class="goods-content-footer-area">
+				<view class="goods-content-footer-price">
+					<text>销量{{sales_tip}}</text>
+				</view>
+				<view class='goods-content-footer-tg-price'>
+					<text>推广赚¥{{promotion_rate}}</text>
+				</view>
+			</view>
+		</view>
+	</view>
+</template>

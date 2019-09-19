@@ -1,0 +1,61 @@
+<view class='bgView'>
+  <view class='goods-img-container'>
+		<swiper catchtap="onSwiperTap" indicator-color="rgba(255, 255, 255, 0.5)" indicator-active-color="#ffffff" style="height: 750rpx;" circular="true" vertical="{{false}}" indicator-dots="true" autoplay="true" interval="5000">
+			<block wx:for="{{detailData.coverList}}" wx:key="idx">
+				<swiper-item> 
+					<image class='goods-img' src='{{item}}'></image>
+				</swiper-item>
+			</block>
+		</swiper>
+  </view>
+  <view class="goods-title-container">
+	  <view class="goods-title-content">
+		  <view class="goods-title-content-title1"><text>礼包套餐价</text></view>
+		  <view class="goods-title-content-title2"><text>¥</text></view>
+		  <view class="goods-title-content-title3"><text>{{detailData.price}}</text></view>
+	  </view>
+	  <view class="goods-title-content">
+		  <view class="goods-title-content-title4"><text>升级礼包</text></view>
+		  <view class="goods-title-content-title5"><text>{{detailData.title}}</text></view>
+	  </view>
+  </view>
+  <view class="goods-info-container">
+		<view class="goods-info-title"><text>合伙人权益</text></view>
+		<view class="goods-info-icon-area">
+			<view class="goods-info-icon">
+			  <view><image src="../../../images/icon_upgrade5.png" class="goods-info-icon-img"></image></view>
+			  <view class="goods-info-icon-img-title"><text>购买省钱</text></view>
+			</view>
+			<view class="goods-info-icon">
+			  <view><image src="../../../images/icon_upgrade4.png" class="goods-info-icon-img"></image></view>
+			  <view class="goods-info-icon-img-title"><text>自购返利</text></view>
+			</view>
+			<view class="goods-info-icon">
+			  <view><image src="../../../images/icon_upgrade1.png" class="goods-info-icon-img"></image></view>
+			  <view class="goods-info-icon-img-title"><text>分享赚钱</text></view>
+			</view>
+			<view class="goods-info-icon">
+			  <view><image src="../../../images/icon_upgrade2.png" class="goods-info-icon-img"></image></view>
+			  <view class="goods-info-icon-img-title"><text>佣金分成</text></view>
+			</view>
+			<view class="goods-info-icon">
+			  <view><image src="../../../images/icon_upgrade3.png" class="goods-info-icon-img"></image></view>
+			  <view class="goods-info-icon-img-title"><text>邀请赚钱</text></view>
+			</view>
+		</view>
+  </view>
+  <!-- 商品详情 start -->
+  <view class='goods-detail-container'>
+		<view class="goods-detail-title-area">
+			<text class="goods-detail-title">-  商品详情  -</text>
+		</view>
+		<block wx:for="{{detailData.detail}}" wx:key="{{index}}">
+			<view class="goods-detail-area">
+				<image mode='widthFix' style="width:750rpx" class="goods-detail-img" src="{{item}}"></image>
+			</view>
+		</block>
+  </view>
+  <view class='footer-container' style="padding-bottom:{{btuBottom}}">
+    <view bindtap="bindUpgrade" class='footer-content-area1'><text>立即升级</text></view>
+  </view>
+</view>

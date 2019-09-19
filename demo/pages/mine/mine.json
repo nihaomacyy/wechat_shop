@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+		"l-button":"/dist/button/index",
+		"l-popup":"/dist/popup/index"
+	},
+  "navigationBarTitleText": "个人中心",
+	"enablePullDownRefresh": true
+}

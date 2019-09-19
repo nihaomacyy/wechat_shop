@@ -1,0 +1,58 @@
+<view class="bgView">
+	<view class="bgView1">
+		<view wx:if="{{addressShow}}">
+			<view class="addr-container-ispay" style="{{addrheight?'height: 185rpx;':''}}">
+				<view class="addr-content-area1">
+					<view class="addr-content-area-name">
+						<text class="addr-content-area-name-title">{{addressData.contact}}</text>
+						<text>{{addressData.phone}}</text>
+					</view>
+					<view class="addr-content-area-address">
+						<text class="addr-content-area-address-province">{{addressData.province}}{{addressData.city}}{{addressData.country}}</text>
+						<text>{{addressData.address}}</text>
+					</view>
+				</view>
+				<view bindtap="bindUpdateAddress" class="addr-content-area2" style="{{addrheight?'line-height:185rpx;':''}}">
+					<text>></text>
+				</view>
+			</view>
+		</view>
+		<view wx:else>
+			<view bindtap="bindAddress" class="addr-container">
+				<view>
+					<image src="../../../images/icon_adress.png" class="addr-content-img"></image>
+				</view>
+				<view class="addr-content-title"><text>点击添加收货地址</text></view>
+			</view>
+		</view>
+		<view class="goods-container">
+			<view>
+				<image src='{{detailData.cover}}' class="goods-img"></image>
+			</view>
+			<view class="goods-content-title">
+				<view class="goods-content-title1"><text>{{detailData.title}}</text></view>
+				<view class="goods-content-title2"><text class="goods-content-title3">¥</text><text class="goods-content-title4">{{detailData.price}}</text></view>
+			</view>
+		</view>
+		<view class="goods-container-amount">
+			<view class="amount-title-area">
+				<view class="amount-title">商品金额</view>
+				<view class="amount-title">¥{{detailData.price}}</view>
+			</view>
+			<view class="amount-title-area">
+				<view class="amount-title">运费</view>
+				<view class="amount-title">免运费</view>
+			</view>
+		</view>
+	</view>
+	<view class='footer-container' style="padding-bottom:{{btuBottom}}">
+	  <view class="footer-content-title"><text>¥</text><text class="footer-content-title3">{{detailData.price}}</text></view>
+	  <view wx:if="{{addressShow}}">
+		  <view class="footer-content-title2 isPay" bindtap="bindWxPay"><text>微信支付</text></view>
+	  </view>
+	  <view wx:else>
+		  <view class="footer-content-title2"><text>微信支付</text></view>
+	  </view>
+	</view>
+	
+</view>

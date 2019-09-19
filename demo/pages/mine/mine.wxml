@@ -1,0 +1,103 @@
+<view wx:if="{{isHide}}">
+
+</view>
+<view wx:else>
+	<view class='bgView'>
+	  <view class='person-container'>
+	    <view class='person-content-img-area'>
+      <image class='person-content-img' src='{{userInfo.avatar}}'></image>
+      
+      </view>
+	    <view class='person-content-right'>
+				<view class="person-content-info">
+					<view style="display: flex;flex-direction: row;align-items:center">
+            <view>
+						<text class='person-content-title'>{{userInfo.nickName}}</text>
+            </view>
+						<view>
+             <image src='/images/userpt.png' style="height:48rpx;width:168rpx;margin-top:10rpx; margin-left:10rpx;"></image>
+             </view>
+					</view>
+					<view>
+						
+					</view>
+				</view>
+	      <view class='person-content-invite-s'>
+	        <view class='person-content-invite-area-s'>
+	          <text bindtap="bindRegister" class='person-content-invite-code-s'>立即升级为合伙人</text>
+	        </view>
+	      </view>
+	    </view>
+	  </view>
+	  
+	  <view bindtap="bindRegister" class='person-banner-container'>
+	    <image class="person-banner" src="/images/hehuo.png"></image>
+	  </view>
+	
+	  
+    <view class='profit-container-wx' style='margin-top:10px;position:none;'>
+      <view class='myorder' bindtap='orderDetail'>
+        <view class="floatleft">
+          <image src='/images/icon_wode.png' class="floatleft-image"></image>
+		      <text class='profit-content-title-wx' >我的订单</text>
+		    </view>
+        <view class="floatleft">
+          <image class='.goto-btn' src='/images/icon_wode_more.png'></image>
+        </view>
+       
+      </view>
+      <view class='mymember'bindtap='bindContact' data-type="3">
+        <view class="floatleft">
+          <image src='/images/icon_wode_copy_2.png' class="floatleft-image"></image>
+		      <text class='profit-content-title-wx'>我的权益</text>
+        </view>
+        <view class="floatleft">
+		      <image class='.goto-btn' src='/images/icon_wode_more.png'></image>
+        </view>
+      </view>
+		</view>
+		
+	  <view class='profit-container-wx' style='margin-top:10px;position:none;'>
+	    <view class='myorder' bindtap='bindContact' data-type="1" >
+        <view class="floatleft">
+          <image src='/images/icon_wode_copy.png' class="floatleft-image"></image>
+		      <text class='profit-content-title-wx'>关于我们</text>
+        </view>
+        <view class="floatleft">
+		      <image class='.goto-btn' src='/images/icon_wode_more.png'></image>
+        </view>
+      </view>
+      <view class='myorder' bindtap='bindContact' data-type="2">
+        <view class="floatleft">
+          <image src='/images/icon_wode_copy_4.png' class="floatleft-image"></image>
+          <text class='profit-content-title-wx'>商务合作</text>
+        </view>
+        <view class="floatleft">
+          <image class='.goto-btn' src='/images/icon_wode_more.png'></image>
+        </view>
+      </view>
+      <view class='mymember' bindtap="myService">
+        <view class="floatleft">
+          <image src='/images/icon_wode_copy_5.png' class="floatleft-image"></image>
+		      <text class='profit-content-title-wx'>微信客服</text>
+        </view>
+        <view class="floatleft">
+		      <image class='.goto-btn' src='/images/icon_wode_more.png'></image>
+        </view>
+      </view>
+	  </view>
+		<l-button type="success" size="long" height="88" l-class="exit-btn" bind:lintap="logout">退出登录</l-button>
+	</view>
+</view>
+<l-popup show="{{upgradeShow}}" locked="{{true}}" content-align="center" bind:lintap="bindUpgradeHide"> 
+		<view style="width: 500rpx;height: 500rpx;position:absolate;">
+			<image style="width: 500rpx; height: 500rpx;" src="/images/upgrade_success.png"></image>
+			<view style="display:flex;flex-direction:column;text-align:center;position:relative;top:-366rpx;">
+				<text style="font-size:36rpx;color:#483919;">您的专属邀请码为</text>
+				<text style="font-size:56rpx;font-weight:bold;letter-spacing:25rpx;color:#483919;margin-top:4rpx;">{{userInfo.tcode}}</text>
+			</view>
+			<view bindtap="bindUpgradeHide" class="upgradeClose"><text>我知道了</text></view>
+		</view>
+	</l-popup>
+
+

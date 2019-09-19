@@ -1,0 +1,30 @@
+<view class="bgView">
+	<view class="banner-container">
+		<image class="img" src="/images/upgrade.png"></image>
+	</view>
+	<view class="upgrade-container">
+		<text>- 购买升级礼包成为合伙人 -</text>
+	</view>
+	<view class='goods-container'>
+		<block wx:for="{{dataList}}" wx:key="index">
+			<view class='goods-content' data-id='{{index}}' bindtap='getDetail'>
+				<view class="goods-img-jb-parent">
+					<image class="goods-img-jb" src="../../../images/icon_libao.png"></image>
+					<image class='goods-content-img' src='{{item.cover}}'></image>
+				</view>
+				<view class='goods-content-title-area'>
+					<text class='goods-content-title'>{{item.title}}</text>
+				</view>
+				<view class='goods-content-tg-price-area'>
+					<view>
+						<text class='goods-content-tg3-price'>￥</text>
+						<text class='goods-content-tg4-price'>{{item.price}}</text>
+					</view>
+					<view class="goods-upgrade-bg">
+						<text class='goods-content-tg5-price'>升级</text>
+					</view>
+				</view>
+			</view>
+		</block>
+	</view>
+</view>

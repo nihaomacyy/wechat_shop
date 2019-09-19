@@ -1,0 +1,214 @@
+/* 商品大图样式 */
+.bgView{
+  width: 100%;
+  overflow: hidden;
+  background: #F5F5F5;
+}
+.goods-img-container{
+  width: 750rpx;
+  height: 750rpx;
+  background: #dfdfdf;
+}
+.goods-img{
+  width: 100%;
+  height:100%;
+}
+
+
+/** 商品详情样式*/
+.goods-detail-container{
+  margin-top:24rpx;
+	margin-bottom:98rpx;
+}
+.goods-detail-title-area{
+	width:100%;
+	height:88rpx;
+	background:#ffffff;
+	text-align:center;
+	line-height:88rpx;
+}
+.goods-detail-title{
+	color:#333333;
+	font-size:28rpx;
+}
+.goods-detail-area{
+	background: #FFFFFF;
+	text-align: center;
+}
+.goods-detail-img{
+	/* width: 100%; */
+}
+.goods-quan{
+	font-size: 24rpx;
+	color: #FFFFFF; 
+	width:120rpx;
+	height:40rpx;
+	line-height:40rpx;
+	text-align:center;
+	margin-left:20rpx;
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAAAgCAYAAADtwH1UAAAAAXNSR0IArs4c6QAACgFJREFUaAXtmjuOHscVhbt/UiINWIBBQ4EA74ABM4NwYkLrUGatgYvQFiRlBLQLgcoMZxbAzCEBRp7UMmBO+3yn7qmufsyDYuLABXbXrXvP41b1P7/YQ82TxvLXJ3+Yflm+Ufhiej99MS2KrmcVmCtmXpTzOnEwmt8L7PqQuzdfeu+jeTLTy63+9+ULt9fKnu70H/Y39nIvPr7Z1/xO5/p6+vQ3L+efX7+dffj/vv67kk+mqTaaQx6bjZFrOeTdhjaY22ofyk/z0cwDyZp6MOMeBtymN/K6/AHZY1ir4L1XDPfAj1/10P1ZVy7neMZf5qvp+vGzS33ydfgai1S4PGSqP9PMTaPnFVfKeW4jZo9zbdTd81WzXmEO/HJxW2XM1HsIXzkwd/JFpKdTfvWQIpi+N8U9XxruaU238zvBkQp2LT+Zln99c5HmC3LR7oZhjBtKnLmTBvU0bFHdjK3dhpfZ/JxEzQf+0Fx4mU/5Ma7Zrd3kP2LB6DJ02M+BL0D8jY0GC13OjfzEmqPlWbfL5cVFYu07vxcdSEhKhBZkRrwvSqywNbmV3txtfCGNG/mJaz71t0O73cgvzIGvfNoHkj5JHrSUM1+9mFPzKT9a6R9x+MkXCb0KQfhsdfYXL3oBIy3QKr3OosneNDiYRYQTwoaPSGE2fNLkB378TvnlHYyY64dBycG+H5yxIWi2P8Qa9ieGL4FAHRc+WMPIDYnOV27D13r0qi1ucsgUn6+gJtyBFEFouFauEEwiGYBqDsFUDvPk3Fj4CO7HDkv5lC/Bkt8rZCN9Nh8w2pptD/8GgeQ9C9z5kuj8ig/mJEq38wes+W7gxJ/8MukrCBGNzF4gqgS59E1jDM8DmPWwXAlgdXU+sRYbbOntc0p7nPJ34O5Pfl9TauMPZI/R2qldngZImU/fWhDv+YBM9Q3WOoyFdMZv+fUriHW6DZFcdP2EC9IPsomEhoKHOar9an6ZbvgoK4+3/cEAyERc6xwSS0vBA6hhvuZgnMvtjI8A/Kp9ED8N7PjYlX97AOXRjFS0GclhQEjTzNlQf0KFJ/9RfAlks4O9bdKS/bO5gOJ/xleOcuenx3CZC4Bs/I13opfNIE96M874Fmgon99AKP5l+vyTz6YHD55L8VuJLq3JcvA0OKWx6PiBVIPpyLmP5WMg3ZKJXT+YJKjvh/1JwhdgaP9ufnl2zfDLaLP/0u/YeDIPjY2cFi/q49vp4SfPp0ePPxvbm5affv+l3gJfTf+pv5r6bVEQ3gz9Jqg4r+x45G0yOd78wHmdevGjlVreLDse3F181eN1yqdP/VDvfy3SOQM/vW/8a5/Bb/pRf+x5XzO/fHNOe8y6fqcPxFfzm7/9KCWP9hVUi/nP//xxusxftf80y1B/2tcOAVdNzrfl+rDproahuhlXeedUZ+aT4HRmePfhCw/XfPB7vtYMf9LAKS6YY26uAbqJP2Dsg15d5sMdRv8WGIziYb7yjb9MD7eHj8rmAZDwQ7iev3ODg6YfRH68+482AAx6h1pqTZpbcNnIjXzwaGiYj8BdfPCFM/UWPtqGcqvhnkd+5bu/1ul/wy8f86NVM9OBD97Xd/PP6yc/jMMDcOHB/L1J9tKNPjG0qcWKP8QYM4xzUHjF5pO7aeAx8ks3m+wHcRNf+c5XHF5mGkDytlH27awK/MH88onXhs+ZHsf5A5gvb3xqbqo6ywazmX2tm8kktaLaljgYZtauEytIDbDzupF3XPhxY+Q3tV5sPOuMfMWGMKOXWunYXzlA2WvHVK7z4cAHT6zLNa/a2nkwBCo+eawzPY7zB2CcSKPoyMXYtcJkQ2B6M/fgw0OHq28m2uT3GgA14p/6gV+41E2qHGbmayYVjP2HGpzUzM8NTGpocGlNztpV87JqrUjmMM4fwHL91IqIWlgzRn0kVtEY3dxIDAGmVqRb+cJ0frSbRPNHHx3MGFo4HDyo+zLQKGOC6+nSqKljNvwB4wejde8/tWEm7Hysx1rFV7/oTI/jhgew/MWKFq3O3UgJVKrLpTkwe5xrJ/lOVs16hTnwC6hyAdfNuhS+FmDu5MvMD9vkRsp+ev+VYOp7A5+8ZvLuaU3be9Nn4aAunOlxHB6A3wWm5euuPm4oceY01DuRQRqOl7HVeHiZ+8cGcGEO/KEWXuZTfoxrHg8kvMwbKP4cGMmcbMLqzTzF4VcaRiMq4dzIr3i5/np5+scvG3a9bx6AD//99Sv5z/0Jx4SD6Yej2LoRXwXX5gpzyhfemxj5iWvGi3DD3/uEQ36M4e355MDVyCGSPPSinPnSNKfmU770TvnJF2n24b1anv5p8xDm5c3nv52u9J3//lo/IvrkXwu4vrkpJQHeCHNl7blqjtXk5m2XmnK8mYbLfBM/b6/Uu3/4pX3gV18jx/HAi597kHbWmaMZz84f95b934cvbLSibW80zNeve/SedXn4/TQ/fDMvP/2u/f5HtXZQgAIexHrDqlu48Pv8aOrNCMeM5llj/1P8etDpqfdfezjrP7/SYM4/5m/4fBjYv64Nv53f//89gK8PPhz5CiPMIK9z8w0csb9uyGXcxo8AD2DPR2yuX0W02AnL2kRJ8mgw/BXGXLHzRWQaR2q/ml+mGz4GytMHV3okDa41RlA1zZ0PzxXNCpwvD9KucXOw44MrX2OFATY+CNO4OVhrPrMTPjrFb/8RLkwzQscOwNYBIabM5WWOUYhouI+P4Ytr/ybX771HZey/94j/GV+5DZ8+4Y+jAKRTs6QTJ/yRS3zGt0AD+vwGTtm3BzD2Yg43JT0NxTQWHT8Q6rkUOvexfAziT1zj4J/CMNufNXz1QWsZd/LLM3h/8lmwH40Nv/Rbpe7hF37POeEf/1Gehs0fRHojqQHSQND4AUvujN8YfS+Nj4aufmis93wDDDd5gx3xhTOfBrjIaXSOcolT7n7hj3izm5TDka8Ybvcb+cXLhBe94N39G18/Afp/FRkGOTLWN2tSIOCqyfm2XHmDgKG6GVd558LXwunMaN2HL/x+051GUCZgiJmSdomcg7Vw4A8YH27Jdr7W4/CBUhyM4mG+8pTHK/x5fsffgl676KRQfkosRBw0j0+vMIBsiIPGhh9zdKsWjOFOtubShPmVJwaXg2Dd+RTuyUfE0OKj4Z5HPkmN7l+x+xz5ThTfjNZjhUc++PABbfivL9Pj+aVyV42vhmjMmGGmT+cp5IIxxDmcDZ+6hvktPL8Lt+GXrg8JPn2dM3u285UJLzMN3MkvJVsX+IP55ROvkd8bjY/+59zl0cvL/Pzq7fTp5Zn+KfIHNT58HUlMf+q2HlA2s691s1DCL0PwwTCztgaxgtSAO68beceFHzdGflPrxcazzshXbAgzeqmVjv2VA5SH2TGV63w48MET63LNq7Z2HgwBRQWN/05/+f9hevTo2fyP12//C8pxcPOr6QobAAAAAElFTkSuQmCC') no-repeat;background-size:100%;
+}
+
+/**
+ * 海报样式
+ */
+.poster-container{
+	width:440rpx;
+	height:1100rpx;
+}
+.poster-container-save{
+	width: 440rpx;
+	height: 88rpx;
+	background: #FF6F00;
+	line-height: 88rpx;
+	margin-top:24rpx;
+	text-align: center;
+}
+.poster-container-share{
+	width: 440rpx;
+	height: 88rpx;
+	background: #F44236;
+	line-height: 88rpx;
+	margin-top:24rpx;
+	text-align: center;
+}
+.poster-container-save-title{
+	color: #FFFFFF;
+	font-size: 36rpx;
+}
+.poster-container-share-title{
+	color: #FFFFFF;
+	font-size: 40rpx;
+}
+.poster-container-img{
+	width: 440rpx;
+	height: 780rpx;
+	/* background: #FFFFFF; */
+	text-align: center;
+}
+.poster-canvas{
+	position:none;
+	height:0px;
+	width:0px;
+}
+.home{
+	position:fixed;
+	bottom:60px;
+	left:12px;
+	width:70rpx;
+	height:70rpx;
+	text-align:center;
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAAAXNSR0IArs4c6QAAA21JREFUaAXtWs9rE1EQnsm21O6mmOrFixfFg/UkgtFDpdBGRDxURTxIUbH/gF695C/w5FWsqIgWpahItSkWRNJUUEGsiEc9eLKFNImHNuObegq82R9v3yZ72IVAMjPfzPfN20ne7gYgO7IOZB3oZQcw6eJULuca7+anAOkKAB36Xw+/AuGMN3rqPpbL7SQ5JCrwb6l4YIvoMREc1olAhE8O4sUdC7UfOr8NW2ICG6XiaWrTQ0WyEEB0HXN4yVuovQqIM3LnjFA+ICLCxsSxm0D0QoUFieNMBY5lDGN9Uhu5rCakC2P55lrrniJ6zoQNIj5zhwcv4+zShgleh7EmkOdtsw1z6otkRFcovA1X+3IwaWsurZyiPG+bbVqJL47bQCOci3OGb4ocGUugwbzJTDo91ubS+BSNO2+deuRPcefSSKC9eZOFdXrM5zLyKbo9b0Qf7Mxbpwz5k/lchhbYMW8EO2UyiXmM5jLUKdqteQvbmihzGSiw+/MWWmao30tfgY2TxSPUhgW1lRoOW7arcYhr6OCE93r5o1RXFEiTY4VmvfmNAPZI4DTYlYDf7pB7EOeW1nV8xC+ZZr11Pe3iWBBzZK46cWwTBRLQeQmUNjuhvLkXBSLgvrQJkfgg4X7JJwpUKzgogdJm9+MqCkybCFM+mUDTzqUFl61gWlbClEe2gqad0+IQ/wC/ungkvoLq7vU8OnDWcwr5fKW2m1/eLneIbexLWqu42d4YP6q2ebGOdQRnylusvvTL0hg/foZw64HaVMa6iM4vrmi1JLSCWO9H50SQOBbOMf3gjAJg3a8Rpr5EBOYQpwcq1S9hSXEsY8LGR4mzLlDNVdWtLD+JQoJjGcPYqLigeOsC1ak2E1RU9sfB6rNaF+ggvNWXCrbGwUrZrQscKOR+ScWC7HGwUm7rAnG22pKKBdnjYKXc1gVKhXplzwT2qvO26mYraKuTvcrjt4LaO8W9IhpQV+QqC0T8HJA0PW4frqJA5bidHgX+TPy4igLdSu0pIETeNPtTScCrOG5zFVKLAjnec/un1S38GQGrM3/XGSPaQudQD0LvMke//H1+Tnz+ni9Cr26Uio/UM8Jr6v2Ieg4wpMUg/ARybmh9EYwIfeqfiVu31BX+Xh1MPWhhTqvq3s4d9f+2N7qYzJZ1IOtA1oGudeAfbd8kiDIJLSkAAAAASUVORK5CYII=');
+	background-repeat:no-repeat;
+	background-size:100%;
+	border:1px solid #ff4336;
+	border-radius:35rpx;
+}
+/* 底部浮动样式*/
+.footer-container{
+  width: 700rpx;
+  position:fixed;
+  bottom: 1rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left:24rpx;
+  border-radius:8rpx;
+}
+.footer-content-area1{
+  height: 88rpx;
+  width: 700rpx;
+  text-align:center;
+  line-height:88rpx;
+  color:#ffffff;
+  font-size: 40rpx;
+  background:#E8161B;
+  border-radius:8rpx;
+  font-weight: bold;
+}
+/** 标题样式 */
+.goods-title-container{
+	width:100%;
+	height:150rpx;
+	padding-left:24rpx;
+	background: #FFFFFF;
+}
+
+.goods-title-content{
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	margin-bottom:25rpx;
+}
+.goods-title-content-title1{
+	font-size:28rpx;
+	color:#333333;
+}
+.goods-title-content-title2{
+	color:#E8161B;
+	font-size:28rpx;
+	margin-left:16rpx;
+}
+.goods-title-content-title3{
+	font-size:48rpx;
+	font-weight:bold;
+	color:#E8161B
+}
+.goods-title-content-title4{
+	font-size:24rpx;
+	width:112rpx;
+	height:36rpx;
+	background:#F8D697;
+	border-radius:16rpx;
+	text-align:center;
+	color:#4E3919;
+}
+.goods-title-content-title5{
+	font-size:30rpx;
+	font-weight:bold;
+	color:#333333;
+	margin-left:16rpx;
+}
+/** 分享信息标识样式 **/
+.goods-info-container{
+	margin-top: 26rpx;
+	background: #FFFFFF;
+	width: 100%;
+	height: 220rpx;
+	display: flex;
+	flex-direction: column;
+	padding: 0rpx 24rpx;
+}
+.goods-info-title{
+	color: #333333;
+	font-size: 28rpx;
+	height: 80rpx;
+	width: 700rpx;
+	border-bottom: 1px solid rgba(222,222,222,0.5);
+	line-height: 80rpx;
+}
+.goods-info-icon-area{
+	display: flex;
+	flex-direction: row;
+	width: 700rpx;
+	margin-top:20rpx;
+	align-items: center;
+	justify-content: space-between;
+}
+.goods-info-icon{
+	text-align: center;
+}
+.goods-info-icon-img-area{
+	width: 60rpx;
+	height: 60rpx;
+}
+.goods-info-icon-img{
+	width: 60rpx;
+	height: 60rpx;
+	mode:widthFix;
+}
+.goods-info-icon-img-title{
+	font-size: 24rpx;
+	color: #333333;
+}

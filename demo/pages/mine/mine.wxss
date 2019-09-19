@@ -1,0 +1,428 @@
+/* 个人信息样式 */
+page{
+  background: #F5F5F5;
+}
+.bgView{
+  width: 100%;
+  overflow: hidden;
+  background:#F5F5F5;
+}
+.person-container{
+  width: 100%;
+  height: 208rpx;
+  background: #E8161B;
+  display: flex;
+  flex-direction: row;
+}
+.person-content-img-area{
+  height: 208rpx;
+  margin-left: 50rpx;
+}
+.person-content-img{
+  width: 128rpx;
+  height: 128rpx;
+  line-height: 208rpx;
+  margin-top: 20rpx;
+  border-radius: 60rpx;  
+}
+.person-content-right{
+  margin-left:24rpx;
+  padding-top:20rpx; 
+	width:100%;
+}
+.person-content-title{
+  font-size: 32rpx;
+  color: #FFFFFF;
+}
+.person-content-auth{
+  font-size: 20rpx;
+  margin-left:  24rpx;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius:20rpx;
+  padding-left: 20rpx;
+  padding-right:20rpx; 
+}
+.person-content-member{
+  font-size: 20rpx;
+  color: #ffffff;
+}
+.person-content-invite{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  margin-top:24rpx; 
+}
+.person-content-invite-code{
+  font-size: 24rpx;
+  color: #ffffff;
+}
+.person-content-invite-copy-area{
+  width: 150rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+
+}
+.person-content-invite-copy{
+  border-radius: 20rpx;
+  font-size:  24rpx;
+  margin-left:20rpx;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+    padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+
+.person-content-invite-s{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  margin-top:24rpx; 
+}
+.person-content-invite-area-s{
+  width:248rpx;
+  height:44rpx;
+  background:#ffffff;
+  border-radius:16rpx;
+  line-height:40rpx;
+  text-align:center;
+
+}
+.person-content-invite-code-s{
+  font-size: 24rpx;
+  color: #F44336;
+}
+.person-content-info{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	line-height:30rpx;
+}
+/*收益提现样式*/
+.profit-container{
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  height: 88rpx;
+  background: #FFFFFF;
+  padding: 0px 24rpx;
+  justify-content:space-between;/*两端对齐*/
+  align-items:center;/* Y轴居中对齐*/
+  position: relative;
+  top:-20rpx;
+  border-radius: 12rpx 12rpx 0rpx 0rpx;
+  
+
+}
+.profit-content-title{
+  color: #444444;
+  font-size: 32rpx;
+}
+.profit-content-tx-area{
+  background: #F44336;
+  line-height: 48rpx;
+  border-radius: 24rpx;
+}
+.profit-content-tx{
+  color: #ffffff;
+  font-size: 28rpx;
+  padding-left: 30rpx;
+padding-right: 30rpx;
+
+}
+/*预估收益样式*/
+.share-container{
+  
+  margin: 0 auto;
+  padding: 0px 24rpx;
+  background: #ffffff;
+  margin-top: 0rpx;
+  padding-bottom: 20rpx;
+}
+.share-content-area{
+  display: flex;
+  flex-direction: row;
+  height: 78rpx;
+  width:100%;
+  border-bottom: 1px solid rgba(222,222,222,0.5);
+  line-height: 78rpx;
+  justify-content:space-between;/*两端对齐*/
+  align-items:center;/* Y轴居中对齐*/
+}
+.share-title-color{
+	color: #F44336 !important;
+}
+.share-content-title{
+  font-size:32rpx;
+  color: #444444;
+}
+.share-content-flag{
+  width: 48rpx;
+  height: 48rpx;
+  color: #000000;
+}
+.share-content-flag1{
+  width: 48rpx;
+  height: 48rpx;
+  color: #969696;
+	text-align: right;
+}
+.share-content-money-area{
+
+  display: flex;
+  flex-direction: row;
+  margin-top: 22rpx;
+  background: #FAFAFA
+}
+.share-content-money{
+  padding: 30rpx 0rpx;
+  display: flex;
+  flex-direction: column;
+  width: 340rpx;
+  text-align: center;
+}
+
+.share-content-money-title{
+  color: #444444;
+  font-size: 32rpx;
+}
+.share-content-money-describe{
+  color: #444444;
+  font-size: 24rpx;
+}
+.profit-container-wx{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  /* width: 682rpx; */
+  background: #FFFFFF;
+  padding: 0px 24rpx;
+  justify-content:space-between;/*两端对齐*/
+  align-items:center;/* Y轴居中对齐*/
+  /* border-radius: 12rpx; */
+  margin-bottom: 24rpx;
+}
+.myorder{
+height: 78rpx;
+  width: 100%;
+  border-bottom: 1px solid rgba(222,222,222,0.5);
+display: flex;
+flex-direction: row;
+line-height: 78rpx;
+justify-content: space-between;
+align-items: center;
+
+}
+.myright{
+height: 78rpx;
+  width: 100%;
+  border-bottom: 1px solid rgba(222,222,222,0.5);
+display: flex;
+flex-direction: row;
+line-height: 78rpx;
+justify-content: space-between;
+align-items: center;
+}
+.mymember{
+height: 78rpx;
+  width: 100%;
+display: flex;
+flex-direction: row;
+line-height: 78rpx;
+justify-content: space-between;
+align-items: center;
+border-bottom: 1px solid rgba(222,222,222,0.5);
+}
+.myinvite{
+  height: 78rpx;
+  width: 100%;
+  border-bottom: 1px solid rgba(222,222,222,0.5);
+  display: flex;
+  flex-direction: row;
+  line-height: 78rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+.floatleft{
+  display: flex;flex-direction: row;line-height: 78rpx;justify-content:space-between;align-items: center;
+}
+.floatleft-image{
+  height:50rpx;width:50rpx;margin-right:12rpx;margin-top:1rpx;
+}
+.goto-btn{
+width: 48rpx;
+height: 48rpx;
+color: #000000;
+margin-top: 12rpx;
+}
+.share-content-bt{
+  color: #969696;
+  height: 78rpx;
+  line-height: 78rpx;
+font-size: 32rpx;
+
+}
+.profit-content-title-wx{
+  color: #444444;
+  font-size: 32rpx;
+}
+.share-content-flag-wx{
+  color: #000000;
+}
+.exit-btn{
+	background: #FFFFFF !important;
+	color: #333333 !important;
+	margin-bottom: 6rpx !important;
+	line-height: 88rpx;
+}
+/**
+ * banner 样式
+ */
+.person-banner-container{
+	width:100%;
+	height: 168rpx;
+	margin-top: 24rpx;
+}
+.person-banner{
+	background-repeat:no-repeat;
+	background-size:100%;
+	width:100%;
+	height:168rpx;
+}
+
+/* 今日爆款区域样式 */
+.hot-goods-title-area{
+	width: 100%;
+	height: 68rpx;
+	margin-top: 48rpx;
+	background: #FFFFFF;
+	line-height: 68rpx;
+	padding:0px 24rpx
+}
+.hot-goods-title{
+	color: #333333;
+	font-size: 32rpx;
+}
+.goods-container{
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  height: 252rpx;
+  background: #ffffff;
+  margin-top:20rpx;
+
+}
+.goods-content-img{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
+.goods-content-img-area{
+  width: 200rpx;
+  height: 200rpx;
+  background: #FFFFFF;
+  margin-top: 28rpx;
+  margin-left:24rpx; 
+}
+.goods-content-word-area{
+  display: flex;
+  flex-direction: column;
+  margin-top: 28rpx;
+  margin-left: 20rpx;
+}
+.goods-content-title-area{
+  width:464rpx;
+  height: 72rpx;
+  line-height:30rpx;
+}
+.goods-content-title{
+  color: #000000;
+  font-size:28rpx;
+}
+.goods-content-price{
+  color: #808080;
+  font-size:20rpx;
+  text-decoration:line-through;
+}
+.goods-content-price-area{
+	width:464rpx;
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	justify-content: space-between;
+}
+.goods-content-price-left-area{
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+}
+.goods-content-quan{
+	background:url('data:image/png;base64,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');
+	background-repeat:no-repeat;
+	background-size:100%;
+	color: #FFFFFF;
+	font-size:24rpx;
+	width:120rpx;
+	height:40rpx;
+	line-height:40rpx;
+	text-align:center;
+	margin-left:24rpx;
+}
+.goods-content-price-area-footer{
+	width:464rpx;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.goods-content-num{
+  color: #808080;
+  font-size: 24rpx;
+}
+.goods-content-footer-price{
+  font-size: 24rpx;
+  color: #808080;
+}
+
+.goods-content-footer-price-word{
+  color: #F44336;
+  font-size: 40rpx;
+  font-weight:bold; 
+}
+
+.goods-content-footer-tg-price{
+  color: #FFFFFF;
+  font-size:24rpx;
+  background: #F44336;
+  padding:4rpx 16rpx;
+  border-radius: 24rpx;
+}
+
+
+.yaoqintitle text{
+  padding: 15rpx 15rpx;
+  font-size: 30rpx;
+  writing-mode:vertical-rl;
+}
+
+.yjtitle text{
+  padding: 15rpx 15rpx;
+  font-size: 30rpx;
+  writing-mode:vertical-rl;
+}
+.upgradeClose{
+	width: 312rpx;
+	height: 80rpx;
+	text-align: center;
+	line-height: 80rpx;
+	color: #483919;
+	background: -webkit-linear-gradient(left, #EFD596 , #D7AA50); /* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(right, #EFD596,#D7AA50); /* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(right, #EFD596, #D7AA50); /* Firefox 3.6 - 15 */
+	background: linear-gradient(to right, #EFD596 , #D7AA50); /* 标准的语法 */
+	position:relative;
+	top:-260rpx;
+	left:98rpx;
+
+}

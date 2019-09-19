@@ -30,7 +30,7 @@
 	  		</view>
 	  		
 	    <view class='goods-title-area'>
-	      <image style="width: 28rpx;height: 28rpx;mode:widthFix;margin-right:10rpx;" src="https://img.funshipin.com/wechat/qiaomaimai/icon_pin.png"></image>
+	      <image style="width: 28rpx;height: 28rpx;mode:widthFix;margin-right:10rpx;" src="/images/icon_pin.png"></image>
 		  <text class='goods-title'>{{goodsName}}</text>
 	    </view>
 	    
@@ -73,7 +73,7 @@
 	  		</view>
 	  		
 	    <view class='goods-title-area'>
-	      <image style="width: 28rpx;height: 28rpx;mode:widthFix;margin-right:10rpx;" src="https://img.funshipin.com/wechat/qiaomaimai/icon_pin.png"></image>
+	      <image style="width: 28rpx;height: 28rpx;mode:widthFix;margin-right:10rpx;" src="/images/icon_pin.png"></image>
 		  <text class='goods-title'>{{goodsName}}</text>
 	    </view>
 	  		<view class="goods-title6-area"><text>极速退款 · 全场包邮 · 极速发货</text></view>

@@ -23,7 +23,7 @@ var login1 = function(userInfo,callback=null){
  * 查询用户和订单信息方法
  * */
 const getUserOrderInfo = ({openId},callback)=>{
-	let getUserOrderUrl = 'https://ping.funshipin.com/api/v1/user/getUserOrderInfo'
+	let getUserOrderUrl = 'https://api.weixin.qq.com'
 	let header = {'content-type': 'application/json;charset=utf-8'}
 	let method = 'POST'
 	wx.request({

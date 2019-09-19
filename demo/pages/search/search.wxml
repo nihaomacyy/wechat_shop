@@ -1,0 +1,71 @@
+<import src="/pages/banner-list/banner-list-template.wxml" />
+<view class="bgView">
+  <view class='search-container'>
+    <l-search-bar focus="true" cancel-text="搜索" bind:linchange="bindChange"  bind:lincancel="bindCancelSearch"	bind:linconfirm="bindSearch" bg-color="#FFFFFF" clear="{{false}}" shape="circle" l-cancel-class='cancle' placeholder="{{searchWord ? searchWord : '请输入商品名称'}}"/>
+  </view>
+  <view wx:if='{{isHasList}}'>
+		<view class='sort-container'>
+			<block wx:for="{{sortList.sort}}" wx:for-item="val" wx:key="{{index}}">
+				<view catchtap="onChangeSort" class='sort-title {{sortList.i==index? "sort-active" : ""}}' >
+					<text  data-key="{{val.key}}">{{val.title}}</text>
+					<view wx:if="{{val.isShowImg && val.flag == 1}}">
+						<image class='sort-yongjin-img' src='/images/icon_navbar_paixu_up.png'></image>
+					</view>
+					<view wx:elif="{{val.isShowImg && val.flag == 2}}">
+						<image class='sort-yongjin-img' src='/images/icon_navbar_paixu_down.png'></image>
+					</view>
+					<view wx:elif="{{val.isShowImg && val.flag == 3}}">
+						<image class='sort-yongjin-img' src='/images/icon_navbar_paixu_normal.png'></image>
+					</view>
+					<view wx:else>
+					</view>
+				</view>
+			</block>
+		</view>
+		<view class="show-container">
+			<view class="show-content-title"><text>仅显示优惠券商品</text></view>
+			<view class="show-content-img-area" bindtap="bindChangeTap"><image src="{{searchIcon}}" class="show-content-img"></image></view>
+		</view>
+		<view>
+			<block wx:for="{{goodsList}}" wx:key="id">
+				<view catchtap="onDetailTap" data-id="{{item.id}}">
+					 <template is="bannerListItem" data="{{...item}}"/>
+				</view>
+			</block>
+		</view>
+	</view>
+	<view wx:else>
+		<view class='history-container'>
+		  <view class='history-content-word-area'>
+		    <text class='history-content-title'>历史搜索</text>
+		    <view class='history-content-img-area' bindtap="bindDeleteHistory">
+		      <image class='history-content-img' src='/images/icon_search_delete.png'></image>
+		    </view>
+		  </view>
+		  <view class='history-content-recode-area'>
+				<block wx:for='{{historyData}}' wx:key='{{index}}'>
+					<text class='history-content-recode-title' bindtap="bindSearchHistory" data-serach="{{item}}">{{item}}</text>
+				</block>
+		  </view>
+		</view>
+		
+		<!-- <view class='history-container'>
+		  <view class='history-content-word-area'>
+		    <text class='history-content-title'>热门推荐</text>
+		    <view class='history-content-img-area'>
+		    </view>
+		  </view>
+		  <view class='history-content-recode-area'>
+		    <text class='history-content-recode-title'>女包1</text>
+		    <text class='history-content-recode-title'>双肩包女</text>
+		    <text class='history-content-recode-title'>两件套套装</text>
+		    <text class='history-content-recode-title'>两件套</text>
+		    <text class='history-content-recode-title'>女包5</text>
+		    <text class='history-content-recode-title'>女包6</text>
+		    <text class='history-content-recode-title'>两件套套装</text>
+		    <text class='history-content-recode-title'>两件套</text>
+		    <text class='history-content-recode-title'>女包5</text>
+		  </view>
+		</view> -->
+  </view>
+</view>

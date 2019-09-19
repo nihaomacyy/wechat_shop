@@ -67,6 +67,11 @@ Page({
 		var signature = e.detail.signature
 		var rawData = e.detail.rawData
 		var iv= e.detail.iv
+		// 这里是登录，写个因人而异
+		// 我这里是把这个用户保存到数据库里面了
+		// 所以要加解密，才要传那么多参数，code微信那边会帮你验证，用过一次就会失效了
+		// 所以登录时候加密解密验证，很安全
+		// 具体加解密规则，看微信文档就可以了，下载一个demo,找到你对应的语言，一会就弄好了
 		util.login({userInfo,encryptedData,signature,rawData,iv},function(resInfo){
 			// 读取本地数据 正式换成对应服务器接口即可
 			var resInfo = databases.userInfo.data.userInfo

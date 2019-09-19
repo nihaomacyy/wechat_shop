@@ -5,7 +5,8 @@
 		"pages/clearance/clearance",
 		"pages/freeshipping/freeshipping",
 		"pages/login/login",
-		"pages/detail/detail"
+		"pages/detail/detail",
+		"pages/mine/mine"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -42,11 +43,28 @@
 			  "text": "1.9包邮",
 			  "iconPath": "/images/icon_tabbar_4.2.png",
 			  "selectedIconPath": "/images/icon_tabbar_4.1.png"
-			}
+			},
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "/images/icon_tab_3_normal.png",
+        "selectedIconPath": "/images/icon_tab_2_pressed_copy.png"
+      }
     ]
   },
+  "subpackages": [
+    {
+      "root": "package",
+      "pages": [
+        "pages/upgrade/upgrade",
+        "pages/upgradedetail/upgradedetail",
+        "pages/upgradeorder/upgradeorder",
+        "pages/upgradeaddress/upgradeaddress"
+      ]
+    }
+  ],
   "navigateToMiniProgramAppIdList": [
-    "wx32540bd863b27570"
+    ""
   ],
   "sitemapLocation": "sitemap.json"
 }

@@ -1,0 +1,138 @@
+/* 平台样式 */
+@import "/pages/banner-list/banner-list-template.wxss";
+.search-container{
+  background: #E8161B;
+}
+.cancle{
+  color: #ffffff !important;
+}
+.pt-container{
+  height: 88rpx;
+ background:  #E8161B;
+}
+.pt-content-title{
+  height: 80rpx;
+  background:  #E8161B !important;
+}
+.header-line{
+  border: none !important;
+}
+/* 历史搜索样式 */
+.history-container{
+  width: 100%;
+  height: 292rpx;
+  padding-top: 24rpx;
+}
+.history-content-word-area{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;/*两端对齐*/
+  padding: 0px 26rpx 0px 26rpx;
+}
+.history-content-img-area{
+  width: 30rpx;
+  height: 30rpx;
+}
+.history-content-img{
+  width: 30rpx;
+  height: 30rpx;
+}
+.history-content-title{
+  color: #2D2D2D;
+  font-size:32rpx;
+}
+.history-content-recode-area{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  padding: 0px 26rpx 0px 26rpx; 
+  margin-top: 32rpx;
+  overflow: hidden;
+}
+.history-content-recode-title{
+  color: #7F7F7F;
+  font-size: 28rpx;
+  background: #F7F7F7;
+  height: 64rpx;
+  border-radius: 24rpx;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+  padding: 0rpx 15rpx 0px 15rpx;
+	line-height:64rpx
+}
+.hot-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-between;/*两端对齐*/
+  padding: 0px 26rpx 0px 26rpx;
+  width: 100%;
+  height: 292rpx;
+  padding-top: 24rpx;
+}
+.hot-content{
+  color: #2D2D2D;
+  font-size:32rpx;
+}
+/*排序条件样式*/
+.sort-container{
+  display: flex;
+  flex-direction:row; 
+  align-items : center;
+  width: 100%;
+  height: 88rpx;
+  background: #ffffff;
+  padding: 0rpx 64rpx 0px 64rpx;
+}
+
+.sort-title{
+  width: 56rpx;
+  height: 40rpx;
+  font-size: 28rpx;
+  color: #7D7D7D;
+  margin-right: 130rpx;
+}
+.sort-active{
+  color: #E8161B;
+}
+.sort-price-img{
+  position: relative;
+  width: 30rpx;
+  height: 30rpx;
+  top:-34rpx;
+  left:56rpx;
+}
+.sort-yongjin-img{
+  position: relative;
+  width: 30rpx;
+  height: 30rpx;
+  top:-34rpx;
+  left:56rpx;
+}
+/**
+ * 是否显示优惠券样式
+ */
+.show-container{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+	height: 72rpx;
+	background: #FAFAFA;
+	justify-content: space-between;
+}
+.show-content-title{
+	color: #333333;
+	font-size: 28rpx;
+	margin-left: 48rpx;
+}
+.show-content-img-area{
+	width: 64rpx;
+	height: 40rpx;
+	margin-right: 48rpx;
+}
+.show-content-img{
+	width: 64rpx;
+	height: 40rpx;
+	mode:widthFix;
+}

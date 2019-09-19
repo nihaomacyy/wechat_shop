@@ -509,4 +509,13 @@ Page({
   		})
   	}
   },
+  /**
+   * 点击主题跳转
+   * */
+  onSwiperTap:function(e){
+  	let themeid = e.target.dataset.themeid;
+  	wx.navigateTo({
+  	  url: "/pages/banner/banner?id="+themeid
+  	})
+  }
 })

@@ -1,0 +1,93 @@
+
+.banner-container{
+	
+}
+.img{
+		width:750rpx;
+		height: 1050rpx;
+	}
+.goods-img-jb-parent{
+	position:relative;
+}
+.goods-img-jb{
+	width:140rpx;
+	height:140rpx;
+	position:absolute;
+}
+/* 礼包升级文案标题 */
+.upgrade-container{
+	height:82rpx;
+	width:100%;
+	text-align:center;
+	line-height:82rpx;
+	color:#1E1D1B;
+	font-size:36rpx;
+	font-weight:bold;
+}
+/*商品列表样式*/
+.goods-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row; 
+  width:100%;
+}
+.goods-content{
+  /* flex: 0 0 46%; */
+  margin-left:10px; 
+  margin-top: 10px;
+  width: 340rpx;
+  height: 490rpx;
+  background: #ffffff;
+	border:1px solid #F5F5F5;
+}
+.goods-content-img{
+  width: 340rpx;
+  height: 340rpx;
+	mode:widthFix;
+}
+.goods-content-title-area{
+  line-height: 30rpx;
+  padding:1rpx 4px;
+}
+.goods-content-title{
+  color: #333333;
+  font-size:28rpx; 
+}
+.goods-content-tg-price-area{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  padding:1rpx 4rpx;
+  margin-top: 8rpx;
+	align-items:center;
+}
+
+.goods-content-tg2-price{
+  color: #969696;
+  font-size:24rpx; 
+  text-decoration:line-through;
+}
+.goods-content-tg3-price{
+  color: #DF9E44;
+  font-size:24rpx; 
+}
+.goods-content-tg4-price{
+  color: #DF9E44;
+  font-size:36rpx; 
+	font-weight: bold;
+}
+.goods-content-tg5-price{
+  color: #4E3919;
+  font-size:28rpx; 
+}
+.goods-upgrade-bg{
+	width:110rpx;
+	height:40rpx;
+	text-align:center;
+	line-height:40rpx;
+	border-radius:8rpx;
+	background: -webkit-linear-gradient(left, #F8D697 , #E7AC60); /* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(right, #F8D697,#E7AC60); /* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(right, #F8D697, #E7AC60); /* Firefox 3.6 - 15 */
+	background: linear-gradient(to right, #F8D697 , #E7AC60); /* 标准的语法 */
+}

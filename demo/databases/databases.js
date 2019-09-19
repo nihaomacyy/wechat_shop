@@ -934,6 +934,130 @@ const detailList = {
 	},
 	"message": "sucsess"
 }
+const upgradeList = {
+	"status": 200,
+	"data": {
+		"list": {
+			"1": {
+				"title": "2.0米高档羊绒棉磨毛四件套",
+				"price": "188.00",
+				"cover": "https:\/\/img.funshipin.com\/wechat\/upgrade\/1\/0.jpg",
+				"coverList": ["https:\/\/img.funshipin.com\/wechat\/upgrade\/1\/0.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/1\/1.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/1\/2.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/1\/3.jpg"],
+				"detail": ["https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/1.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/2.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/3.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/4.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/5.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/6.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/7.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/8.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/9.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/11.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/12.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/13.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/14.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/15.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/16.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/17.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/18.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/19.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/21.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/22.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/23.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/24.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/25.jpg"]
+			},
+			"2": {
+				"title": "金伯乐高档礼品锅不锈钢三件套",
+				"price": "188.00",
+				"cover": "https:\/\/img.funshipin.com\/wechat\/upgrade\/2\/1x.jpg",
+				"coverList": ["https:\/\/img.funshipin.com\/wechat\/upgrade\/2\/1x.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/2\/1.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/2\/2.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/2\/3.jpg"],
+				"detail": ["https:\/\/img.funshipin.com\/wechat\/upgrade\/gaoyaguo\/1.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/gaoyaguo\/2.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/gaoyaguo\/3.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/gaoyaguo\/4.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/gaoyaguo\/5.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/gaoyaguo\/6.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/gaoyaguo\/7.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/gaoyaguo\/8.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/gaoyaguo\/9.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/gaoyaguo\/11.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/gaoyaguo\/12.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/gaoyaguo\/13.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/gaoyaguo\/14.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/gaoyaguo\/15.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/gaoyaguo\/16.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/gaoyaguo\/17.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/gaoyaguo\/18.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/gaoyaguo\/19.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/gaoyaguo\/21.jpg"]
+			},
+			"3": {
+				"title": "泰国皇家正品Royallatex天然乳胶枕",
+				"price": "188.00",
+				"cover": "https:\/\/img.funshipin.com\/wechat\/upgrade\/3\/0.jpg",
+				"coverList": ["https:\/\/img.funshipin.com\/wechat\/upgrade\/3\/0.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/3\/1x.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/3\/2x.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/3\/3x.jpg"],
+				"detail": ["https:\/\/img.funshipin.com\/wechat\/upgrade\/rujiaozhen\/1.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/rujiaozhen\/2.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/rujiaozhen\/3.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/rujiaozhen\/4.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/rujiaozhen\/5.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/rujiaozhen\/6.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/rujiaozhen\/7.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/rujiaozhen\/8.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/rujiaozhen\/9.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/rujiaozhen\/11.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/rujiaozhen\/12.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/rujiaozhen\/13.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/rujiaozhen\/14.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/rujiaozhen\/15.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/rujiaozhen\/16.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/rujiaozhen\/17.jpg"]
+			},
+			"4": {
+				"title": "1米高大号毛绒玩具抱抱熊公仔",
+				"price": "188.00",
+				"cover": "https:\/\/img.funshipin.com\/wechat\/upgrade\/4\/0.jpg",
+				"coverList": ["https:\/\/img.funshipin.com\/wechat\/upgrade\/4\/0.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/4\/1.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/4\/2.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/4\/3.jpg"],
+				"detail": ["https:\/\/img.funshipin.com\/wechat\/upgrade\/baobaoxiong\/1.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/baobaoxiong\/2.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/baobaoxiong\/3.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/baobaoxiong\/4.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/baobaoxiong\/5.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/baobaoxiong\/6.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/baobaoxiong\/7.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/baobaoxiong\/8.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/baobaoxiong\/9.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/baobaoxiong\/11.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/baobaoxiong\/12.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/baobaoxiong\/13.jpg"]
+			},
+			"5": {
+				"title": "多功能电磁脉冲颈椎理疗仪",
+				"price": "188.00",
+				"cover": "https:\/\/img.funshipin.com\/wechat\/upgrade\/5\/0.jpg",
+				"coverList": ["https:\/\/img.funshipin.com\/wechat\/upgrade\/5\/0.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/5\/1.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/5\/2.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/5\/3.jpg"],
+				"detail": ["https:\/\/img.funshipin.com\/wechat\/upgrade\/5\/0.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/5\/1.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/5\/2.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/5\/3.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/5\/4.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/5\/5.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/5\/6.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/5\/7.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/5\/8.jpg"]
+			},
+			"6": {
+				"title": "充电式软毛全自动防水声波电动牙刷",
+				"price": "188.00",
+				"cover": "https:\/\/img.funshipin.com\/wechat\/upgrade\/6\/1x.png",
+				"coverList": ["https:\/\/img.funshipin.com\/wechat\/upgrade\/6\/1x.png", "https:\/\/img.funshipin.com\/wechat\/upgrade\/6\/2x.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/6\/3x.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/6\/4x.jpg"],
+				"detail": ["https:\/\/img.funshipin.com\/wechat\/upgrade\/6\/0.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/6\/1.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/6\/2.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/6\/3.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/6\/4.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/6\/5.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/6\/6.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/6\/7.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/6\/8.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/6\/9.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/6\/10.jpg"]
+			},
+			"7": {
+				"title": "西班牙原装进口赤霞珠干红葡萄酒",
+				"price": "188.00",
+				"cover": "https:\/\/img.funshipin.com\/wechat\/upgrade\/7\/0.jpg",
+				"coverList": ["https:\/\/img.funshipin.com\/wechat\/upgrade\/7\/0.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/7\/1.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/7\/2.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/7\/3.jpg"],
+				"detail": ["https:\/\/img.funshipin.com\/wechat\/upgrade\/7\/0.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/7\/1.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/7\/2.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/7\/3.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/7\/4.jpg"]
+			},
+			"8": {
+				"title": "景德镇精品骨瓷碗碟家用套装",
+				"price": "188.00",
+				"cover": "https:\/\/img.funshipin.com\/wechat\/upgrade\/8\/0.jpg",
+				"coverList": ["https:\/\/img.funshipin.com\/wechat\/upgrade\/8\/0.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/8\/1.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/8\/2.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/8\/5.jpg"],
+				"detail": ["https:\/\/img.funshipin.com\/wechat\/upgrade\/8\/0.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/8\/1.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/8\/2.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/8\/3.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/8\/4.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/8\/5.jpg"]
+			},
+			"9": {
+				"title": "防刮擦万向轮男女通用旅行拉杆箱",
+				"price": "188.00",
+				"cover": "https:\/\/img.funshipin.com\/wechat\/upgrade\/9\/0.jpg",
+				"coverList": ["https:\/\/img.funshipin.com\/wechat\/upgrade\/9\/0.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/9\/1.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/9\/2.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/9\/3.jpg"],
+				"detail": ["https:\/\/img.funshipin.com\/wechat\/upgrade\/9\/0.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/9\/1.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/9\/2.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/9\/3.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/9\/4.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/9\/5.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/9\/6.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/9\/7.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/9\/8.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/9\/9.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/9\/10.jpg"]
+			},
+			"10": {
+				"title": "可折叠单脚儿童滑板车带音乐",
+				"price": "188.00",
+				"cover": "https:\/\/img.funshipin.com\/wechat\/upgrade\/10\/0.jpg",
+				"coverList": ["https:\/\/img.funshipin.com\/wechat\/upgrade\/10\/0.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/10\/1.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/10\/2.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/10\/3.jpg"],
+				"detail": ["https:\/\/img.funshipin.com\/wechat\/upgrade\/10\/0.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/10\/1.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/10\/2.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/10\/3.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/10\/4.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/10\/5.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/10\/6.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/10\/7.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/10\/8.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/10\/9.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/10\/10.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/10\/11.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/10\/12.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/10\/13.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/10\/14.jpg"]
+			}
+		}
+	},
+	"message": "sucsess"
+}
+const upgradeDetail = {
+	"status": 200,
+	"data": {
+		"list": {
+			"title": "2.0米高档羊绒棉磨毛四件套",
+			"price": "188.00",
+			"cover": "https:\/\/img.funshipin.com\/wechat\/upgrade\/1\/0.jpg",
+			"coverList": ["https:\/\/img.funshipin.com\/wechat\/upgrade\/1\/0.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/1\/1.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/1\/2.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/1\/3.jpg"],
+			"detail": ["https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/1.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/2.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/3.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/4.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/5.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/6.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/7.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/8.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/9.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/11.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/12.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/13.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/14.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/15.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/16.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/17.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/18.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/19.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/21.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/22.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/23.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/24.jpg", "https:\/\/img.funshipin.com\/wechat\/upgrade\/sijiantao\/25.jpg"]
+		}
+	},
+	"message": "sucsess"
+}
+const address = {
+	"status": 200,
+	"data": {
+		"list": {
+			"id": 16,
+			"userid": 396,
+			"contact": "啥嘎鸡",
+			"phone": "13843838438",
+			"province": "江苏省",
+			"city": "镇江市",
+			"country": "润州区",
+			"address": "啥嘎鸡小区",
+			"iscurrent": 0,
+			"updatetime": "2019-09-19 15:58:09",
+			"createtime": "2019-09-19 15:58:09"
+		}
+	},
+	"message": "sucsess"
+}
+const payInfo = {
+	"status": 200,
+	"data": {
+		"list": {
+			"appId": "wx9d0691b1f21c8bd0",
+			"timeStamp": "1568880387",
+			"nonceStr": "ciq8z0y8zdpn3991uzscvigix91ksicl",
+			"package": "prepay_id=wx1916062739790720ebdecaac1526099900",
+			"signType": "MD5",
+			"paySign": "9866BDA79632544D07A3CC550B0D903F"
+		}
+	},
+	"message": "sucsess"
+}
 module.exports = {
   navList: navList,
   goodsList: goodsList,
@@ -942,7 +1066,11 @@ module.exports = {
   hotList:hotList,
   sellList:sellList,
   userInfo:userInfo,
-  detailList:detailList
+  detailList:detailList,
+  upgradeList:upgradeList,
+  upgradeDetail:upgradeDetail,
+  address:address,
+  payInfo:payInfo
 }
 
 
